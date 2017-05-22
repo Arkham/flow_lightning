@@ -17,3 +17,16 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/flow_lightning](https://hexdocs.pm/flow_lightning).
 
+## How to run
+
+First create the data
+
+`cd /priv && bash generate_data.sh && cd ..`
+
+Then install the deps and run iex
+
+`mix deps.get && iex -S mix`
+
+Now just run
+
+`FlowLightning.run("words_by_16.txt")`

@@ -2,7 +2,7 @@
 
 set -e
 
-rm 
+rm -i words*
 for x in $(seq 1 1000); do
   cat /usr/share/dict/words >> words.txt
 done
